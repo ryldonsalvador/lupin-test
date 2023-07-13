@@ -6,11 +6,10 @@
   font-family: mySecondFont;
   src: url("../fonts/BebasKai.woff");
 }
-body{
+html,body{
     margin: 0;
     padding: 0;
 /*    background-color: red;*/
-    overflow-x: hidden;
 }
 #main_container{
     position: absolute;
@@ -425,7 +424,7 @@ body{
         background-image: url("../images/bg_incognito_m_l.jpg");
     }
     #container{
-/*        height: 120%;*/
+        height: 120%;
     }
     #container_incognito{
         height: 175%;
@@ -491,7 +490,7 @@ body{
 }
 @media screen and (min-width:800px) and (max-height:600px) and (orientation:landscape) {
     #container,#container_incognito{
-/*        height: 130%;*/
+        height: 130%;
     }
     #title{
         font-size: 2.5rem;
