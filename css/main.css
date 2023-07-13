@@ -425,7 +425,7 @@ body{
         background-image: url("../images/bg_incognito_m_l.jpg");
     }
     #container{
-        height: 120%;
+/*        height: 120%;*/
     }
     #container_incognito{
         height: 175%;
