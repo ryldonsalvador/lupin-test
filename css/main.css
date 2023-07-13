@@ -426,6 +426,9 @@ html,body{
     #container{
         height: 120%;
     }
+    #main_container{
+/*        height: 100vh;*/
+    }
     #container_incognito{
         height: 175%;
     }
