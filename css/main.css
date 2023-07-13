@@ -1,0 +1,529 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("../fonts/firstFont.woff");
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url("../fonts/BebasKai.woff");
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+#main_container{
+    position: absolute;
+    display: none;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-color: blue;
+}
+#container{
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    display: none;
+    background-color: yellow;
+}
+#container_incognito{
+    position: absolute;
+    width: 100%; height: 110%;
+    top: 0; left: 0;
+    display: none;
+}
+#bg{
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/bg_m_p.jpg");
+}
+#bg_incognito{
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/bg_incognito_m_p.jpg");
+}
+.logo{
+    position: absolute;
+    left: 3%; top: 5%;
+    max-width: 130px;
+}
+.incognito_logo{
+    position: relative;
+    max-width: 70px;
+    left: 0; right: 0;
+    margin: auto;
+    top: 0px;
+    display: block;
+}
+#title{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 80px;
+    font-family: myFirstFont, Arial;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #f2632c;
+    text-align: center;
+}
+#title_incognito{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0px;
+    font-family: myFirstFont, Arial;
+    color: #f2632c;
+    text-align: center; 
+    margin: 0px 10px 0 10px;
+    display: block;
+    padding-top: 30px;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+#sub_title_incognito{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    font-family: mySecondFont, Arial;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #ffffff;
+    text-align: center; 
+    padding-top: 10px;
+}
+#copy1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 150px;
+    font-family: mySecondFont, Arial;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #ffffff;
+    text-align: center;
+}
+#copy2_content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 75px;
+    font-family: mySecondFont, Arial;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+#copy2_1, #copy2_2, #copy2_3{
+    display: inline-block;
+}
+#copy2_2{
+    color: #f2632c;
+    font-style: italic;
+    font-size: 2.3rem;
+    margin: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#videoIncognito{
+    position: absolute;
+    overflow: hidden;
+    width: 295px;
+    height: 170px;
+    left: 0; right: 0;
+    margin: auto;
+    padding-top: 40px;
+}
+.videoIncognitoIframe{
+    width: 100%; height: 100%;
+}
+.br_sub_title_incognito{
+    display: block;
+}
+#incognito_content{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 110px;
+}
+.title_incognito_br_m{
+
+}
+.title_incognito_br_d{
+    display: none;
+}
+.title_incognito_br_m_2{
+    display: none;
+}
+@media (max-width:320px) {
+    #title{
+        font-size: 2rem;
+        line-height: 2rem;
+        padding-top: 15%;
+    }
+    .logo{
+        left: 9%;
+        top: 5%;
+        max-width: 76px;
+    }
+    #copy2_content{
+        bottom: 70px;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    #copy2_2{
+        font-size: 1.5rem;
+    }
+    .title_incognito_br_m{
+        display: block;
+    }
+}
+@media (max-width:360px) {
+    .logo{
+        left: 7% !important;
+    }
+}
+@media (min-width:321px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    #title{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding-top: 8%;
+    }
+    #bg{
+        background-image: url("../images/bg_m_p.jpg");
+    }
+    .logo{
+        left: 9%;
+        top: 5%;
+        max-width: 76px;
+    }
+    #copy1{
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    #copy2_content{
+        bottom: 75px;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    #copy2_2{
+        font-size: 1.5rem;
+    }
+
+    #videoIncognito{
+        width: 350px;
+        height: 195px;
+    }
+    .title_incognito_br_m{
+        display: block;
+    }
+ }
+
+@media (min-width:360px) {
+    #videoIncognito{
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media (min-width:390px)  {
+    #container{
+        height: 100%;
+    }
+}
+
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+    #bg{
+        background-image: url("../images/bg_m_p.jpg");
+    }
+    #title{
+        font-size: 3rem;
+        line-height: 3rem;
+        padding-top: 3%;
+    }
+    #copy1{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .brr{
+        display: block;
+    }
+    #copy2_content{
+        bottom: 80px;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+/*    incognito*/
+
+    #bg_incognito{
+        background-image: url("../images/bg_incognito_m_p.jpg");
+    }
+
+    #videoIncognito{
+        width: 400px;
+        height: 220px;
+    }
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    #copy2_content{
+        bottom: 110px;
+    }
+    .brr{
+        display: none;
+    }
+    #title{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        padding-top: 6%;
+    }
+    #copy1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    #bg{
+        background-image: url("../images/bg.jpg");
+    }
+    #container{
+        height: 100%;
+    }
+    .logo{
+        left: 4%; top: 5%;
+        max-width: 80px;
+    }
+    #copy2_content{
+        font-size: 1rem;
+    }
+    #copy2_2{
+        font-size: 2rem;
+    }
+
+    /*    incognito*/
+
+    #bg_incognito{
+        background-image: url("../images/bg_incognito.jpg");
+    }
+
+    #title_incognito{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    #sub_title_incognito{
+/*        top: 350px;*/
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        margin: 0px 40px 0px 40px;
+    }
+    #videoIncognito{
+        width: 500px;
+        height: 300px;
+    }
+    .title_incognito_br_m{
+        display: block;
+    }
+    .title_incognito_br_d{
+        display: block;
+    }
+
+}
+@media all and (min-device-width: 768px) and (min-device-height: 1024px) and (orientation:portrait) {
+    #title{
+        padding-top: 12% !important;
+    }
+}
+@media (min-width:701px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    #title{
+        font-size: 4rem;
+        line-height: 4rem;
+        padding-top: 3%;
+    }
+    #copy1{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    #bg{
+        background-image: url("../images/bg.jpg");
+    }
+    #container{
+        height: 100%;
+    }
+    .logo{
+        left: 4%; top: 5%;
+        max-width: 80px;
+    }
+    #title_incognito{
+        font-size: 4rem;
+        line-height: 4rem;
+/*        padding-top: 3%;*/
+    }
+    .br_sub_title_incognito{
+/*        display: none;*/
+    }
+    #sub_title_incognito{
+/*        top: 280px;*/
+    }
+    #videoIncognito{
+        width: 600px;
+        height: 350px;
+    }
+    #copy2_content{
+        bottom: 102px;
+    }
+
+}
+@media (min-width:770px) {
+    .title_incognito_br_m{
+        display: none;
+    }
+}
+@media (min-width:811px) {
+    .br_sub_title_incognito{
+        display: none;
+    }
+    #videoIncognito{
+        width: 800px;
+        height: 450px;
+    }
+    
+}
+@media (min-width:1200px)  {
+   #title{
+/*        padding-top: 0%;*/
+    }
+    #title_incognito{
+        font-size: 4rem;
+        line-height: 4rem;
+/*        padding-top: 9%;*/
+    }
+}
+@media (min-width:1400px)  {
+   #title{
+/*        padding-top: 2%;*/
+    }
+    #title_incognito{
+/*        padding-top: 9%;*/
+    }
+}
+@media screen and (min-width:320px) and (max-height:600px) and (orientation:landscape) {
+    #bg{
+        background-image: url("../images/bg.jpg");
+    }
+    #bg_incognito{
+        background-image: url("../images/bg_incognito_m_l.jpg");
+    }
+    #container{
+        height: 120%;
+    }
+    #container_incognito{
+        height: 175%;
+    }
+    .logo {
+        left: 4%;
+        top: 5%;
+        max-width: 70px;
+    }
+    #title{
+        font-size: 2.1rem;
+        line-height: 2rem;
+        padding-top: 2%;
+        top: 74px;
+    }
+    .brr2{
+        display: none;
+    }
+    #copy2_content{
+        bottom: 40px;
+    }
+    #copy1{
+        bottom: 80px;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    #copy2_content{
+        font-size: .8rem;
+    }
+    #copy2_2{
+        font-size: 1.5rem;   
+    }
+/*    incognito*/
+    #incognito_content{
+        top: 65px;
+    }
+    #title_incognito{
+        font-size: 2.1rem;
+        line-height: 2rem;
+    }
+    #sub_title_incognito{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+    .br_sub_title_incognito{
+        display: none;
+    }
+    #videoIncognito {
+        width: 500px;
+        height: 300px;
+    }
+    .title_incognito_br_m{
+        display: none;
+    }
+    .title_incognito_br_m_2{
+        display: block;
+    }
+}
+@media screen and (min-width:700px) and (max-height:600px) and (orientation:landscape) {
+    #title{
+        top: 60px;
+    }
+}
+@media screen and (min-width:800px) and (max-height:600px) and (orientation:landscape) {
+    #container,#container_incognito{
+/*        height: 130%;*/
+    }
+    #title{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    #title{
+        top: 65px;
+    }
+}
+
+
+@media screen and (min-width: 2000px) {
+    #title{
+        font-size: 8rem;
+        color: #f2632c;
+        line-height: 8rem;
+        text-align: center;
+/*        padding-top: 7%;*/
+    }
+    .logo{
+        max-width: 200px;
+    }
+    .incognito_logo{
+        font-size: 8rem;
+        line-height: 8rem;
+/*        top: 200px;*/
+        max-width: 150px;
+    }
+    #title_incognito{
+/*        padding-top: 12%;*/
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+}
+
+
