@@ -9,7 +9,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: red;
+/*    background-color: red;*/
 }
 #main_container{
     position: absolute;
@@ -424,10 +424,10 @@ body{
         background-image: url("../images/bg_incognito_m_l.jpg");
     }
     #container{
-        height: 120%;
+/*        height: 120%;*/
     }
     #container_incognito{
-        height: 175%;
+/*        height: 175%;*/
     }
     .logo {
         left: 4%;
