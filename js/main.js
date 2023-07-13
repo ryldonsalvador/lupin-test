@@ -155,14 +155,14 @@ function detectLanguage(){
             sub_title_incognito.innerHTML = "A PRÉSENT INDÉTECTABLE, PROFITEZ DE LA <br class='title_incognito_br_m'>BANDE-ANNONCE <br class='title_incognito_br_m_2'>SANS LAISSER AUCUNE TRACE."
             
         }else{
-            title.innerHTML = "LUPIN IS BACK."
-            copy1.innerHTML = "WATCH THE TRAILER SOON."
-            copy2_1.innerHTML = "OR SWITCH TO"
-            copy2_2.innerHTML = "LUPIN MODE"
-            copy2_3.innerHTML = "AND WATCH IT NOW."
+            // title.innerHTML = "LUPIN IS BACK."
+            // copy1.innerHTML = "WATCH THE TRAILER SOON."
+            // copy2_1.innerHTML = "OR SWITCH TO"
+            // copy2_2.innerHTML = "LUPIN MODE"
+            // copy2_3.innerHTML = "AND WATCH IT NOW."
 
-            title_incognito.innerHTML = "YOU’VE GONE INCOGNITO."
-            sub_title_incognito.innerHTML = "NOW THAT YOU GOT IN HERE LEAVING <br class='br_sub_title_incognito'>NO TRACE, ENJOY THE TRAILER."
+            // title_incognito.innerHTML = "YOU’VE GONE INCOGNITO."
+            // sub_title_incognito.innerHTML = "NOW THAT YOU GOT IN HERE LEAVING <br class='br_sub_title_incognito'>NO TRACE, ENJOY THE TRAILER."
         }
             
     }
