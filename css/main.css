@@ -17,6 +17,7 @@ html,body{
     box-sizing: border-box;
     padding: 0;
     width: 100vw;
+    background-color: black;
 }
 #main_container{
     position: absolute;
