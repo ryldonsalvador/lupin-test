@@ -103,7 +103,7 @@ function init(){
 }
 
 function detectLanguage(){
-    // main_container.style.display = "block";
+    main_container.style.display = "block";
     // var userLang = navigator.language || navigator.userLanguage; 
     // console.log ("The language is: " + userLang);
     const urlString = window.location.href;
