@@ -18,6 +18,7 @@
     --k-safe-area-left: 0px;
   }
 }
+
 @font-face {
   font-family: myFirstFont;
   src: url("../fonts/firstFont.woff");
@@ -31,13 +32,22 @@ html{
   padding: env(safe-area-inset);
 }
 html,body{
-    width: 100%;
+/*    width: 100%;
     height: 100%;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     width: 100vw;
-    background-color: black;
+    background-color: black;*/
+    width: 100vw;
+    height: 100vh;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin-top: calc(-1 * env(safe-area-inset-top));
+    margin-right: calc(-1 * env(safe-area-inset-right));
+    margin-bottom: calc(-1 * env(safe-area-inset-bottom));
+    margin-left: calc(-1 * env(safe-area-inset-left));
+    box-sizing: border-box;
 }
 #main_container{
     position: absolute;
