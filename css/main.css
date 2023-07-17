@@ -27,23 +27,20 @@
   font-family: mySecondFont;
   src: url("../fonts/BebasKai.woff");
 }
+html,body{
+    margin: 0;
+    background-color: black;
+}
 html{
   margin: env(safe-area-inset);
   padding: env(safe-area-inset);
 }
+
 #main_container{
     position: absolute;
     display: none;
     width: 100%; height: 100%;
     top: 0; left: 0;
-}
-#test{
-    width: 100%;
-    object-fit: cover;
-}
-img{
-  margin: env(safe-area-inset);
-  object-fit: cover;
 }
 #container{
     position: absolute;
@@ -449,7 +446,7 @@ img{
         background-image: url("../images/bg.jpg");
     }
     #bg_incognito{
-        background-image: url("../images/bg_incognito_m_l.jpg");
+        background-image: url("../images/bg_incognito_m_l_gradient.jpg");
     }
     #container{
         height: 120%;
