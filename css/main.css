@@ -42,10 +42,17 @@
   margin: env(safe-area-inset);
   padding: env(safe-area-inset);
 }*/
-
+*{ 
+    margin : 0; box-sizing: border-box;
+    -webkit-box-sizing: border-box;-moz-box-sizing: border-box;
+    padding: env(safe-area-inset);
+}
 html{ margin: env(safe-area-inset); padding: env(safe-area-inset); }
-html, body, img{ width: 100%; height: 100%; margin: 0; box-sizing: border-box; padding: 0; width: 100vw; }
-img{ margin: env(safe-area-inset); object-fit: cover; }
+html, body{ 
+    width: 100%; height: 100%; margin: 0; box-sizing: border-box; padding: 0; width: 100vw; 
+    padding: env(safe-area-inset);
+}
+/*img{ margin: env(safe-area-inset); object-fit: cover; }*/
 
 #main_container{
     position: absolute;
