@@ -1,4 +1,4 @@
-@supports (left: env(safe-area-inset-left)):  {
+/*@supports (left: env(safe-area-inset-left)):  {
   .no-safe-areas: {
     --k-safe-area-left: 0px;
     --k-safe-area-right: 0px;
@@ -17,7 +17,8 @@
   .no-safe-areas-left: {
     --k-safe-area-left: 0px;
   }
-}
+}*/
+
 
 @font-face {
   font-family: myFirstFont;
