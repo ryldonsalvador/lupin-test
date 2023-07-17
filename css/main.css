@@ -41,6 +41,10 @@ html{
     width: 100%;
     object-fit: cover;
 }
+img{
+  margin: env(safe-area-inset);
+  object-fit: cover;
+}
 #container{
     position: absolute;
     width: 100%; height: 100%;
