@@ -1,3 +1,4 @@
+// import * as THREE from "three";
 var main_container;
 var countryCode;
 var bg;
@@ -13,6 +14,7 @@ var copy2_3;
 
 var non_Incognito_container,
     incognito_container;
+
 
 const fetchLocation = async () => {
     try {
@@ -37,6 +39,7 @@ const fetchLocation = async () => {
 
 
 function init(){
+    // viewportFunction();
     main_container = document.getElementById("main_container");
     non_Incognito_container = document.getElementById("container");
     incognito_container = document.getElementById("container_incognito");
@@ -83,6 +86,10 @@ function init(){
     //     }
 
     //   });
+
+    var elemDiv = document.createElement('div');
+    elemDiv.style.cssText = 'position:absolute;width:100%;height:100%;opacity:0.3;z-index:100;background:#000;';
+    document.body.appendChild(elemDiv);
 
     detectIncognito().then((result) => {
         if (result.isPrivate==true) {
@@ -175,5 +182,13 @@ function hide_nonIncognito_Elements(){
 function show_Incognito_Elements(){
     incognito_container.style.display = "block";
 }
+
+// ==================================================== GLOBAL SCOPE DECLARATIONS ========================================================
+// let camera: THREE.PerspectiveCamera, scene: THREE.Scene, raycaster: THREE.Raycaster, renderer: THREE.WebGLRenderer;
+// let canvas_dom: any;
+// let intersects: any;
+// let controls;
+
+// let zoom = 1;
 
 window.onload = init;
