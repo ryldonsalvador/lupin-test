@@ -46,10 +46,10 @@
     margin : 0; box-sizing: border-box;
     -webkit-box-sizing: border-box;-moz-box-sizing: border-box;
     padding: env(safe-area-inset);
-    width: 100vw;
-    height: 100vh;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    width: -webkit-fill-available;*/
+/*    height: -webkit-fill-available;*/
     margin-top: calc(-1 * env(safe-area-inset-top));
     margin-right: calc(-1 * env(safe-area-inset-right));
     margin-bottom: calc(-1 * env(safe-area-inset-bottom));
